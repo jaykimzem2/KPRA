@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>About KPRA – Kenya Professional Realtors Association</title>
+<meta name="description" content="Learn about KPRA — Kenya's leading professional real estate association. Our mission, vision, history and core values since 2013."/>
+<link rel="icon" href="assets/images/logo.png"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<link rel="stylesheet" href="css/style.css"/>
+<style>
+.mission-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:25px;}
+.mission-card{background:var(--white);border-radius:12px;padding:35px 28px;box-shadow:0 5px 20px rgba(0,0,0,.07);text-align:center;transition:var(--transition);border-top:4px solid transparent;}
+.mission-card:hover{transform:translateY(-8px);box-shadow:var(--shadow-hover);}
+.mission-card.blue{border-top-color:var(--primary);}
+.mission-card.orange{border-top-color:var(--accent);}
+.mission-card.dark{border-top-color:var(--dark);}
+.mission-icon{width:70px;height:70px;border-radius:50%;display:grid;place-items:center;font-size:28px;margin:0 auto 20px;}
+.mission-icon.blue{background:rgba(96,182,197,.12);color:var(--primary);}
+.mission-icon.orange{background:rgba(212,72,39,.12);color:var(--accent);}
+.mission-icon.dark{background:rgba(26,26,46,.08);color:var(--dark);}
+.mission-card h3{font-size:1.1rem;font-weight:800;margin-bottom:12px;color:var(--dark);}
+.mission-card p{font-size:14px;color:var(--grey);line-height:1.8;}
+.timeline{position:relative;max-width:800px;margin:0 auto;}
+.timeline::before{content:'';position:absolute;left:50%;top:0;bottom:0;width:2px;background:linear-gradient(180deg,var(--primary),var(--accent));transform:translateX(-50%);}
+.tl-item{display:grid;grid-template-columns:1fr 60px 1fr;gap:0;margin-bottom:40px;position:relative;}
+.tl-item:nth-child(even) .tl-content{grid-column:3;text-align:left;}
+.tl-item:nth-child(even) .tl-empty{grid-column:1;}
+.tl-item:nth-child(odd) .tl-content{grid-column:1;text-align:right;}
+.tl-item:nth-child(odd) .tl-empty{grid-column:3;}
+.tl-dot{grid-column:2;display:flex;align-items:center;justify-content:center;z-index:2;}
+.tl-dot-inner{width:40px;height:40px;background:var(--primary);border-radius:50%;display:grid;place-items:center;color:#fff;font-size:13px;font-weight:800;border:3px solid #fff;box-shadow:0 0 0 3px var(--primary);}
+.tl-content{background:var(--white);border-radius:10px;padding:20px 22px;box-shadow:0 4px 15px rgba(0,0,0,.08);border:1px solid var(--border);}
+.tl-year{font-size:11px;font-weight:700;color:var(--primary);text-transform:uppercase;letter-spacing:1px;margin-bottom:5px;}
+.tl-title{font-size:15px;font-weight:700;color:var(--dark);margin-bottom:6px;}
+.tl-desc{font-size:13px;color:var(--grey);}
+@media(max-width:768px){.timeline::before{left:20px;}.tl-item{grid-template-columns:40px 1fr;}.tl-dot{grid-column:1;}.tl-content,.tl-empty{grid-column:2;text-align:left!important;}.mission-grid{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+
+<div class="topbar"><div class="container"><div class="topbar-left"><span><i class="fas fa-phone"></i> +254 731 644 204</span><a href="mailto:info@kprakenya.co.ke"><i class="fas fa-envelope"></i> info@kprakenya.co.ke</a><span><i class="fas fa-location-dot"></i> Park Suites, 44 Parklands Rd, 6th Floor</span></div><div class="topbar-right"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-x-twitter"></i></a><a href="#"><i class="fab fa-linkedin-in"></i></a><a href="#"><i class="fab fa-youtube"></i></a></div></div></div>
+
+<nav class="navbar"><div class="container"><div class="nav-inner">
+<a href="index.html" class="nav-logo"><img src="assets/images/logo.png" alt="KPRA Logo"/></a>
+<button class="hamburger"><span></span><span></span><span></span></button>
+<ul class="nav-menu">
+  <li><a href="index.html">Home</a></li>
+  <li class="active"><a href="about.html">About KPRA <i class="fas fa-chevron-down"></i></a><ul class="dropdown"><li><a href="about.html">About Us</a></li><li><a href="team.html">KPRA Team</a></li></ul></li>
+  <li><a href="membership.html">Membership <i class="fas fa-chevron-down"></i></a><ul class="dropdown"><li><a href="membership.html">Membership Packages</a></li><li><a href="benefits.html">Member Benefits</a></li><li><a href="apply.html">Apply Now</a></li></ul></li>
+  <li><a href="training.html">Training <i class="fas fa-chevron-down"></i></a><ul class="dropdown"><li><a href="training.html">Training &amp; Certification</a></li><li><a href="portal.html">School Portal</a></li></ul></li>
+  <li><a href="events.html">Events <i class="fas fa-chevron-down"></i></a><ul class="dropdown"><li><a href="events.html">KPRA Events</a></li><li><a href="news.html">Real Estate News</a></li></ul></li>
+  <li><a href="#">Publications <i class="fas fa-chevron-down"></i></a><ul class="dropdown"><li><a href="#">Professional Realtor Magazine</a></li><li><a href="#">Newsletter</a></li></ul></li>
+  <li><a href="contact.html">Contact Us</a></li>
+  <li><a href="apply.html" class="nav-cta">Join KPRA</a></li>
+</ul>
+</div></div></nav>
+
+<section class="page-hero">
+  <div class="container"><div class="page-hero-inner">
+    <h1>About <span style="color:var(--primary)">KPRA</span></h1>
+    <p>Kenya's premier professional real estate association — advancing excellence since 2013.</p>
+    <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>About KPRA</span></div>
+  </div></div>
+</section>
+
+<!-- ABOUT MAIN -->
+<section class="section-pad">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-img-wrap" data-aos="fade-right">
+        <img src="assets/images/hero1.png" alt="KPRA Kenya Real Estate"/>
+        <div class="about-badge"><div class="num">2013</div><div class="label">Incorporated</div></div>
+      </div>
+      <div data-aos="fade-left">
+        <div class="section-tag">Who We Are</div>
+        <h2 class="section-title" style="font-size:2rem;margin:10px 0 20px;">Kenya Professional <span>Realtors Association</span></h2>
+        <div class="section-line" style="margin:0 0 25px;"></div>
+        <p style="color:var(--grey);margin-bottom:18px;line-height:1.8;">Kenya Professional Realtors Association (KPRA), incorporated in 2013, is a professional organization for Real Estate professionals who sell, buy and manage Real Estate property and businesses.</p>
+        <p style="color:var(--grey);margin-bottom:18px;line-height:1.8;">KPRA provides a variety of services to its members including education, training, certification, affinity programs and legislative representation, as well as membership in local and regional associations affiliated with KPRA.</p>
+        <p style="color:var(--grey);margin-bottom:25px;line-height:1.8;">To work on behalf of Kenyan property owners, K.P.R.A provides a facility for professional development, research and exchange of information among its members and to the public and government for the purpose of preserving the free enterprise system and transfer real property.</p>
+        <div style="display:flex;gap:20px;flex-wrap:wrap;">
+          <div style="text-align:center;padding:20px;background:var(--light-grey);border-radius:8px;min-width:100px;"><div style="font-size:2rem;font-weight:800;color:var(--primary);font-family:var(--font-main);">500+</div><div style="font-size:12px;color:var(--grey);">Active Members</div></div>
+          <div style="text-align:center;padding:20px;background:var(--light-grey);border-radius:8px;min-width:100px;"><div style="font-size:2rem;font-weight:800;color:var(--accent);font-family:var(--font-main);">12+</div><div style="font-size:12px;color:var(--grey);">Years Active</div></div>
+          <div style="text-align:center;padding:20px;background:var(--light-grey);border-radius:8px;min-width:100px;"><div style="font-size:2rem;font-weight:800;color:var(--primary);font-family:var(--font-main);">5</div><div style="font-size:12px;color:var(--grey);">Member Types</div></div>
+          <div style="text-align:center;padding:20px;background:var(--light-grey);border-radius:8px;min-width:100px;"><div style="font-size:2rem;font-weight:800;color:var(--accent);font-family:var(--font-main);">6</div><div style="font-size:12px;color:var(--grey);">Committees</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MISSION / VISION / VALUES -->
+<section class="section-pad bg-light">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <div class="section-tag">Our Foundation</div>
+      <h2 class="section-title">Mission, Vision &amp; <span>Core Values</span></h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="mission-grid">
+      <div class="mission-card blue" data-aos="fade-up" data-aos-delay="0">
+        <div class="mission-icon blue"><i class="fas fa-bullseye"></i></div>
+        <h3>Our Mission</h3>
+        <p>To be the collective force influencing and shaping the real estate industry. To be the leading advocate of the right to own, use and transfer real property. To be the acknowledged leader in developing standards for efficient, effective and ethical real estate business practices. To create training and certification for members, offer networking opportunities and cooperate with government agencies in improving the Real Estate industry.</p>
+      </div>
+      <div class="mission-card orange" data-aos="fade-up" data-aos-delay="100">
+        <div class="mission-icon orange"><i class="fas fa-eye"></i></div>
+        <h3>Our Vision</h3>
+        <p>The core purpose of K.P.R.A is advancing real estate professional services by way of promoting its members through training, certification and professional designation. We envision a Kenya where every real estate transaction is conducted with the highest standards of professionalism, transparency and integrity.</p>
+      </div>
+      <div class="mission-card dark" data-aos="fade-up" data-aos-delay="200">
+        <div class="mission-icon dark"><i class="fas fa-shield-halved"></i></div>
+        <h3>Core Values</h3>
+        <p style="text-align:left;">
+          <span style="display:flex;align-items:center;gap:8px;margin-bottom:8px;"><i class="fas fa-check-circle" style="color:var(--primary);"></i> <strong>Integrity</strong> — Uncompromising ethics</span>
+          <span style="display:flex;align-items:center;gap:8px;margin-bottom:8px;"><i class="fas fa-check-circle" style="color:var(--primary);"></i> <strong>Professionalism</strong> — World-class standards</span>
+          <span style="display:flex;align-items:center;gap:8px;margin-bottom:8px;"><i class="fas fa-check-circle" style="color:var(--primary);"></i> <strong>Excellence</strong> — Always improving</span>
+          <span style="display:flex;align-items:center;gap:8px;margin-bottom:8px;"><i class="fas fa-check-circle" style="color:var(--primary);"></i> <strong>Innovation</strong> — Progressive thinking</span>
+          <span style="display:flex;align-items:center;gap:8px;margin-bottom:8px;"><i class="fas fa-check-circle" style="color:var(--primary);"></i> <strong>Collaboration</strong> — Industry partnerships</span>
+          <span style="display:flex;align-items:center;gap:8px;"><i class="fas fa-check-circle" style="color:var(--primary);"></i> <strong>Advocacy</strong> — Members first</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT WE DO -->
+<section class="section-pad">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <div class="section-tag">What We Do</div>
+      <h2 class="section-title">Our Key <span>Services</span></h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="why-grid">
+      <div class="why-card" data-aos="fade-up" data-aos-delay="0"><div class="why-icon"><i class="fas fa-graduation-cap"></i></div><h3 class="why-title">Education &amp; Training</h3><p class="why-desc">Continuous professional development programs, workshops and the Certified Professional Realtor (CPR) certification course — creating a platform for success.</p></div>
+      <div class="why-card" data-aos="fade-up" data-aos-delay="100"><div class="why-icon"><i class="fas fa-certificate"></i></div><h3 class="why-title">Certification Programs</h3><p class="why-desc">The KPRA CPR designation is Kenya's premier real estate certification, distinguishing our members as trusted, qualified professionals in the market.</p></div>
+      <div class="why-card" data-aos="fade-up" data-aos-delay="200"><div class="why-icon"><i class="fas fa-people-group"></i></div><h3 class="why-title">Membership Network</h3><p class="why-desc">Monthly power networking events connecting members with clients, developers, financiers and allied professionals across Kenya's real estate ecosystem.</p></div>
+      <div class="why-card" data-aos="fade-up" data-aos-delay="0"><div class="why-icon"><i class="fas fa-gavel"></i></div><h3 class="why-title">Legislative Advocacy</h3><p class="why-desc">Active representation in policy dialogue and legislative processes affecting real estate — ensuring a fair, transparent and regulated industry for all.</p></div>
+      <div class="why-card" data-aos="fade-up" data-aos-delay="100"><div class="why-icon"><i class="fas fa-newspaper"></i></div><h3 class="why-title">Publications</h3><p class="why-desc">The Professional Realtor Magazine, Real Estate Reports and Newsletters deliver timely market intelligence and professional insights to our members.</p></div>
+      <div class="why-card" data-aos="fade-up" data-aos-delay="200"><div class="why-icon"><i class="fas fa-trophy"></i></div><h3 class="why-title">Awards &amp; Recognition</h3><p class="why-desc">Kenya's largest annual real estate awards and recognition event — celebrating excellence and setting benchmarks for the entire industry.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- HISTORY TIMELINE -->
+<section class="section-pad bg-light">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <div class="section-tag">Our Journey</div>
+      <h2 class="section-title">KPRA <span>History</span> &amp; Milestones</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="timeline" data-aos="fade-up" data-aos-delay="100">
+      <div class="tl-item">
+        <div class="tl-content"><div class="tl-year">2013</div><div class="tl-title">KPRA Founded</div><div class="tl-desc">Kenya Professional Realtors Association is incorporated as a professional membership body for real estate professionals in Kenya.</div></div>
+        <div class="tl-dot"><div class="tl-dot-inner">13</div></div>
+        <div class="tl-empty"></div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-empty"></div>
+        <div class="tl-dot"><div class="tl-dot-inner">15</div></div>
+        <div class="tl-content"><div class="tl-year">2015</div><div class="tl-title">First Annual Awards Gala</div><div class="tl-desc">KPRA launches Kenya's first major real estate awards event, recognizing excellence across all professional real estate categories.</div></div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-content"><div class="tl-year">2016</div><div class="tl-title">CPR Certification Launched</div><div class="tl-desc">The Certified Professional Realtor (CPR) designation programme is introduced, setting a new standard for real estate professionalism in Kenya.</div></div>
+        <div class="tl-dot"><div class="tl-dot-inner">16</div></div>
+        <div class="tl-empty"></div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-empty"></div>
+        <div class="tl-dot"><div class="tl-dot-inner">18</div></div>
+        <div class="tl-content"><div class="tl-year">2018</div><div class="tl-title">Professional Realtor Magazine</div><div class="tl-desc">Launch of the Professional Realtor Magazine — Kenya's premier real estate industry publication, reaching thousands of professionals countrywide.</div></div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-content"><div class="tl-year">2020</div><div class="tl-title">Online Training Platform</div><div class="tl-desc">KPRA launches its digital training infrastructure, enabling members to access education and certification remotely across Kenya.</div></div>
+        <div class="tl-dot"><div class="tl-dot-inner">20</div></div>
+        <div class="tl-empty"></div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-empty"></div>
+        <div class="tl-dot"><div class="tl-dot-inner">24</div></div>
+        <div class="tl-content"><div class="tl-year">2024</div><div class="tl-title">New KPRA School Portal</div><div class="tl-desc">Launch of the comprehensive KPRA online school portal — modular training, quizzes and certification tracking for all member levels.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="training-cta section-pad-sm"><div class="container"><div class="training-cta-inner"><div><h2>Ready to Join <span>KPRA?</span></h2><p>Become part of Kenya's most respected real estate professionals network today.</p></div><div><a href="membership.html" class="btn btn-primary" style="margin-right:15px;"><i class="fas fa-user-plus"></i> View Membership</a><a href="apply.html" class="btn btn-accent"><i class="fas fa-file-signature"></i> Apply Now</a></div></div></div></section>
+
+<section class="newsletter-section"><div class="container"><div class="newsletter-inner"><div><h2>Stay Updated with KPRA</h2><p>Get newsletters, market reports and event updates in your inbox.</p></div><form class="newsletter-form" onsubmit="return false;"><input type="email" placeholder="Your email address" required/><button type="submit">Subscribe</button></form></div></div></section>
+
+<footer class="footer"><div class="footer-main"><div class="container"><div class="footer-grid"><div><div class="footer-logo"><img src="assets/images/logo.png" alt="KPRA"/></div><p class="footer-about">Kenya Professional Realtors Association — The Voice Of Real Estate Professionals In Kenya.</p><div class="footer-socials"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-x-twitter"></i></a><a href="#"><i class="fab fa-linkedin-in"></i></a><a href="#"><i class="fab fa-youtube"></i></a></div></div><div><div class="footer-heading">Quick Links</div><ul class="footer-links"><li><a href="about.html">About KPRA</a></li><li><a href="team.html">KPRA Team</a></li><li><a href="membership.html">Membership</a></li><li><a href="training.html">Training</a></li><li><a href="portal.html">School Portal</a></li><li><a href="events.html">Events</a></li></ul></div><div><div class="footer-heading">Membership</div><ul class="footer-links"><li><a href="membership.html#associate">Associate Realtor</a></li><li><a href="membership.html#professional">Professional Realtor</a></li><li><a href="membership.html#broker">Broker</a></li><li><a href="membership.html#corporate">Corporate</a></li><li><a href="apply.html">Apply Online</a></li></ul></div><div><div class="footer-heading">Contact Us</div><div class="footer-contact-item"><i class="fas fa-location-dot"></i><span>Park Suites, 44 Parklands Rd, 6th Floor Pent 8</span></div><div class="footer-contact-item"><i class="fas fa-phone"></i><a href="tel:+254731644204">+254 731 644 204</a></div><div class="footer-contact-item"><i class="fas fa-envelope"></i><a href="mailto:info@kprakenya.co.ke">info@kprakenya.co.ke</a></div></div></div></div></div><div class="container"><div class="footer-bottom"><p>&copy; 2024 Kenya Professional Realtors Association (KPRA). All Rights Reserved.</p></div></div></footer>
+<div class="scroll-top"><i class="fas fa-arrow-up"></i></div>
+<script src="js/main.js"></script>
+</body></html>

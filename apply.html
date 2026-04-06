@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Apply for KPRA Membership – Online Application Form</title>
+<meta name="description" content="Apply for KPRA membership online. Complete the interactive application form for Associate, Professional, Broker, Corporate or Affiliate membership."/>
+<link rel="icon" href="assets/images/logo.png"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<link rel="stylesheet" href="css/style.css"/>
+<style>
+.apply-wrap{display:grid;grid-template-columns:320px 1fr;gap:40px;align-items:start;}
+.apply-sidebar{position:sticky;top:100px;}
+.sidebar-card{background:linear-gradient(135deg,var(--dark),var(--dark2));border-radius:12px;padding:30px;color:#fff;margin-bottom:20px;}
+.sidebar-card h3{font-size:1rem;font-weight:700;margin-bottom:18px;color:#fff;}
+.step-list{list-style:none;}
+.step-list li{display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid rgba(255,255,255,.08);font-size:14px;}
+.step-list li:last-child{border:none;}
+.step-num{width:30px;height:30px;border-radius:50%;background:rgba(255,255,255,.1);display:grid;place-items:center;font-size:12px;font-weight:700;flex-shrink:0;transition:var(--transition);}
+.step-num.active{background:var(--primary);}
+.step-num.done{background:#22c55e;}
+.fee-summary{background:var(--light-grey);border-radius:12px;padding:25px;}
+.fee-summary h3{font-size:15px;font-weight:700;color:var(--dark);margin-bottom:15px;}
+.fee-row{display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid var(--border);font-size:14px;}
+.fee-row:last-child{border:none;font-weight:700;color:var(--dark);padding-top:12px;}
+.fee-row .label{color:var(--grey);}
+.fee-total{color:var(--primary)!important;font-size:1.1rem;}
+.form-section-title{font-size:1rem;font-weight:700;color:var(--dark);margin-bottom:20px;padding-bottom:10px;border-bottom:2px solid var(--primary);display:flex;align-items:center;gap:8px;}
+.wizard-steps{display:flex;gap:0;margin-bottom:35px;border-radius:8px;overflow:hidden;border:1px solid var(--border);}
+.w-step{flex:1;padding:14px 10px;text-align:center;font-size:13px;font-weight:600;color:var(--grey);background:var(--white);border-right:1px solid var(--border);cursor:default;transition:var(--transition);}
+.w-step:last-child{border:none;}
+.w-step.active{background:var(--primary);color:#fff;}
+.w-step.done{background:var(--light-grey);color:var(--primary);}
+.w-step span{display:block;font-size:11px;font-weight:400;margin-top:2px;opacity:.8;}
+.form-step{display:none;}
+.form-step.active{display:block;}
+.form-nav{display:flex;justify-content:space-between;align-items:center;margin-top:30px;padding-top:20px;border-top:1px solid var(--border);}
+.success-box{display:none;text-align:center;padding:60px 40px;}
+.success-box .icon{width:90px;height:90px;background:rgba(34,197,94,.1);border-radius:50%;display:grid;place-items:center;font-size:2.5rem;color:#22c55e;margin:0 auto 25px;}
+.success-box h2{font-size:1.8rem;font-weight:800;color:var(--dark);margin-bottom:12px;}
+.success-box p{color:var(--grey);max-width:500px;margin:0 auto 25px;}
+.quiz-option{padding:10px 16px;border:2px solid var(--border);border-radius:6px;margin-bottom:8px;cursor:pointer;font-size:14px;transition:var(--transition);}
+.quiz-option:hover{border-color:var(--primary);}
+.quiz-option.selected{border-color:var(--primary);background:rgba(96,182,197,.08);}
+.quiz-option.correct{background:rgba(34,197,94,.1);border-color:#22c55e;color:#166534;}
+.quiz-option.wrong{background:rgba(239,68,68,.1);border-color:#ef4444;color:#991b1b;}
+@media(max-width:900px){.apply-wrap{grid-template-columns:1fr;}.apply-sidebar{position:static;}}
+</style>
+</head>
+<body>
+
+<div class="topbar"><div class="container"><div class="topbar-left"><span><i class="fas fa-phone"></i> +254 731 644 204</span><a href="mailto:info@kprakenya.co.ke"><i class="fas fa-envelope"></i> info@kprakenya.co.ke</a></div><div class="topbar-right"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-x-twitter"></i></a><a href="#"><i class="fab fa-linkedin-in"></i></a></div></div></div>
+
+<nav class="navbar"><div class="container"><div class="nav-inner">
+<a href="index.html" class="nav-logo"><img src="assets/images/logo.png" alt="KPRA Logo"/></a>
+<button class="hamburger"><span></span><span></span><span></span></button>
+<ul class="nav-menu">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="about.html">About KPRA <i class="fas fa-chevron-down"></i></a><ul class="dropdown"><li><a href="about.html">About Us</a></li><li><a href="team.html">KPRA Team</a></li></ul></li>
+  <li class="active"><a href="membership.html">Membership <i class="fas fa-chevron-down"></i></a><ul class="dropdown"><li><a href="membership.html">Membership Packages</a></li><li><a href="benefits.html">Member Benefits</a></li><li><a href="apply.html">Apply Now</a></li></ul></li>
+  <li><a href="training.html">Training</a></li>
+  <li><a href="events.html">Events</a></li>
+  <li><a href="contact.html">Contact Us</a></li>
+  <li><a href="apply.html" class="nav-cta">Join KPRA</a></li>
+</ul>
+</div></div></nav>
+
+<section class="page-hero">
+  <div class="container"><div class="page-hero-inner">
+    <h1>Membership <span style="color:var(--primary)">Application</span></h1>
+    <p>Complete the online application form below. Ensure all details are accurate before submission.</p>
+    <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><a href="membership.html">Membership</a><span>/</span><span>Apply</span></div>
+  </div></div>
+</section>
+
+<section class="section-pad">
+  <div class="container">
+    <div class="apply-wrap">
+
+      <!-- SIDEBAR -->
+      <div class="apply-sidebar">
+        <div class="sidebar-card">
+          <h3><i class="fas fa-list-check" style="color:var(--primary);margin-right:8px;"></i> Application Steps</h3>
+          <ul class="step-list">
+            <li><div class="step-num active" id="dot1">1</div> Personal Information</li>
+            <li><div class="step-num" id="dot2">2</div> Professional Details</li>
+            <li><div class="step-num" id="dot3">3</div> Membership Selection</li>
+            <li><div class="step-num" id="dot4">4</div> Documents &amp; Consent</li>
+          </ul>
+        </div>
+        <div class="fee-summary">
+          <h3><i class="fas fa-receipt" style="color:var(--primary);margin-right:8px;"></i> Fee Summary</h3>
+          <div class="fee-row"><span class="label">Application Fee:</span> <span id="displayAppFee">KSh 2,500</span></div>
+          <div class="fee-row"><span class="label">Annual Fee:</span> <span id="displayAnnFee">—</span></div>
+          <div class="fee-row fee-total"><span>Total Payable:</span> <span id="displayTotal">Select type</span></div>
+          <p style="font-size:11px;color:var(--grey);margin-top:10px;"><i class="fas fa-info-circle"></i> Application fee is non-refundable. Annual fee payable upon approval.</p>
+        </div>
+      </div>
+
+      <!-- MAIN FORM -->
+      <div class="form-card">
+        <!-- WIZARD STEPS BAR -->
+        <div class="wizard-steps">
+          <div class="w-step active">1 <span>Personal Info</span></div>
+          <div class="w-step">2 <span>Professional</span></div>
+          <div class="w-step">3 <span>Membership</span></div>
+          <div class="w-step">4 <span>Submit</span></div>
+        </div>
+
+        <form id="applicationForm">
+          <!-- STEP 1: Personal Info -->
+          <div class="form-step active">
+            <div class="form-section-title"><i class="fas fa-user" style="color:var(--primary);"></i> Personal Information</div>
+            <div class="form-row">
+              <div class="form-group"><label>First Name <span>*</span></label><input type="text" class="form-control" name="firstName" id="firstName" placeholder="Enter first name" required/><div class="field-error"></div></div>
+              <div class="form-group"><label>Last Name <span>*</span></label><input type="text" class="form-control" name="lastName" id="lastName" placeholder="Enter last name" required/><div class="field-error"></div></div>
+            </div>
+            <div class="form-row">
+              <div class="form-group"><label>Email Address <span>*</span></label><input type="email" class="form-control" name="email" id="email" placeholder="name@example.com" required/><div class="field-error"></div></div>
+              <div class="form-group"><label>Phone Number <span>*</span></label><input type="tel" class="form-control" name="phone" id="phone" placeholder="+254 7xx xxx xxx" required/><div class="field-error"></div></div>
+            </div>
+            <div class="form-row">
+              <div class="form-group"><label>Date of Birth</label><input type="date" class="form-control" name="dob"/></div>
+              <div class="form-group"><label>National ID / Passport No. <span>*</span></label><input type="text" class="form-control" name="idNumber" required placeholder="e.g. 12345678"/><div class="field-error"></div></div>
+            </div>
+            <div class="form-group"><label>Physical Address <span>*</span></label><input type="text" class="form-control" name="address" required placeholder="Street, Area, City"/><div class="field-error"></div></div>
+            <div class="form-row">
+              <div class="form-group"><label>County</label><select class="form-control form-select" name="county"><option value="">Select County</option><option>Nairobi</option><option>Mombasa</option><option>Kisumu</option><option>Nakuru</option><option>Kiambu</option><option>Machakos</option><option>Kajiado</option><option>Other</option></select></div>
+              <div class="form-group"><label>Gender</label><select class="form-control form-select" name="gender"><option value="">Select Gender</option><option>Male</option><option>Female</option><option>Prefer not to say</option></select></div>
+            </div>
+            <div class="form-nav">
+              <span style="font-size:13px;color:var(--grey);"><i class="fas fa-lock"></i> Your data is secure and private</span>
+              <button type="button" class="btn btn-primary btn-next-step">Next: Professional Details <i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+
+          <!-- STEP 2: Professional Details -->
+          <div class="form-step">
+            <div class="form-section-title"><i class="fas fa-briefcase" style="color:var(--primary);"></i> Professional Details</div>
+            <div class="form-row">
+              <div class="form-group"><label>Current Employer / Company</label><input type="text" class="form-control" name="company" placeholder="Company name"/></div>
+              <div class="form-group"><label>Job Title / Role</label><input type="text" class="form-control" name="jobTitle" placeholder="e.g. Real Estate Agent"/></div>
+            </div>
+            <div class="form-row">
+              <div class="form-group"><label>Years of RE Experience</label><select class="form-control form-select" name="experience"><option value="">Select Range</option><option>0-1 Year (Entry Level)</option><option>1-4 Years (Junior)</option><option>5-9 Years (Senior)</option><option>10+ Years (Expert)</option></select></div>
+              <div class="form-group"><label>Primary Area of Practice</label><select class="form-control form-select" name="practiceArea"><option value="">Select Area</option><option>Residential Sales</option><option>Commercial Sales</option><option>Property Management</option><option>Real Estate Development</option><option>Valuation &amp; Appraisal</option><option>Property Financing</option><option>Other</option></select></div>
+            </div>
+            <div class="form-group"><label>Brief Professional Profile / Bio</label><textarea class="form-control" name="bio" rows="4" placeholder="Briefly describe your professional background and real estate experience..."></textarea></div>
+            <div class="form-group"><label>LinkedIn Profile URL</label><input type="url" class="form-control" name="linkedin" placeholder="https://linkedin.com/in/yourname"/></div>
+            <div class="form-group"><label>Have you held any professional real estate licence or certificate?</label><select class="form-control form-select" name="hasLicence"><option value="">Select</option><option>Yes – Specify in bio above</option><option>No</option><option>Applied / Pending</option></select></div>
+            <div class="form-group"><label>How did you hear about KPRA?</label><select class="form-control form-select" name="referral"><option value="">Select</option><option>Social Media</option><option>Referral from Member</option><option>Google Search</option><option>KPRA Event</option><option>Magazine / Print</option><option>Other</option></select></div>
+            <div class="form-nav">
+              <button type="button" class="btn btn-outline-primary btn-prev-step"><i class="fas fa-arrow-left"></i> Previous</button>
+              <button type="button" class="btn btn-primary btn-next-step">Next: Membership Type <i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+
+          <!-- STEP 3: Membership Selection -->
+          <div class="form-step">
+            <div class="form-section-title"><i class="fas fa-id-card" style="color:var(--primary);"></i> Membership Selection</div>
+            <div class="form-group">
+              <label>Membership Type <span>*</span></label>
+              <select class="form-control form-select" name="membershipType" id="membershipType" required>
+                <option value="">-- Select Membership Level --</option>
+                <option value="associate">Associate Realtor (AR) – KSh 7,500/yr</option>
+                <option value="professional">Professional Realtor (PR) – KSh 12,500/yr</option>
+                <option value="broker">Broker – KSh 20,000/yr</option>
+                <option value="corporate">Corporate – KSh 50,000/yr</option>
+                <option value="affiliate">Affiliate – KSh 50,000/yr</option>
+              </select>
+              <div class="field-error"></div>
+            </div>
+            <div id="subOptions" style="display:none;margin-bottom:20px;">
+              <div class="form-group">
+                <label>Sub-Type <span>*</span></label>
+                <select class="form-control form-select" id="subType" name="subType"><option value="">-- Select Sub-type --</option></select>
+              </div>
+            </div>
+            <!-- Membership Type Descriptions -->
+            <div id="mem-desc-associate" class="eligibility-box" style="display:none;">
+              <h3><i class="fas fa-seedling" style="color:var(--primary);"></i> Associate Realtor (AR) — Entry Level</h3>
+              <p>Recommended for anyone with <strong>0–1 year</strong> of real estate experience. Annual Fee: <strong>KSh 7,500</strong>. Application Fee: <strong>KSh 2,500</strong> (non-refundable).</p>
+            </div>
+            <div id="mem-desc-professional" class="eligibility-box" style="display:none;">
+              <h3><i class="fas fa-star" style="color:var(--primary);"></i> Professional Realtor (PR)</h3>
+              <p>For realtors with <strong>1+ years</strong> experience. Three levels: Junior (JR), Senior (SR), and Certified Professional Realtor (CPR). Annual Fee: <strong>KSh 12,500</strong>. Application Fee: <strong>KSh 2,500</strong> (non-refundable).</p>
+            </div>
+            <div id="mem-desc-broker" class="eligibility-box" style="display:none;">
+              <h3><i class="fas fa-building" style="color:var(--primary);"></i> Broker</h3>
+              <p>Business owners who have employed a certified AR or PR. Annual Fee: <strong>KSh 20,000</strong>. Application Fee: <strong>KSh 2,500</strong> (non-refundable).</p>
+            </div>
+            <div id="mem-desc-corporate" class="eligibility-box" style="display:none;">
+              <h3><i class="fas fa-city" style="color:var(--primary);"></i> Corporate</h3>
+              <p>Open to banks, insurance, developers and service providers. Annual Fee: <strong>KSh 50,000</strong>. Application Fee: <strong>KSh 2,500</strong> (non-refundable).</p>
+            </div>
+            <div id="mem-desc-affiliate" class="eligibility-box" style="display:none;">
+              <h3><i class="fas fa-handshake" style="color:var(--primary);"></i> Affiliate</h3>
+              <p>Our sponsors and partners — chapters, subsidiaries, MOUs and linkages. Annual Fee: <strong>KSh 50,000</strong>. Application Fee: <strong>KSh 2,500</strong> (non-refundable).</p>
+            </div>
+            <div class="form-group"><label>Name of Proposer (Existing KPRA Member)</label><input type="text" class="form-control" name="proposer" placeholder="KPRA member who is proposing your membership"/></div>
+            <div class="form-group"><label>Name of Seconder (Existing KPRA Member)</label><input type="text" class="form-control" name="seconder" placeholder="KPRA member who seconds your application"/></div>
+            <div class="form-nav">
+              <button type="button" class="btn btn-outline-primary btn-prev-step"><i class="fas fa-arrow-left"></i> Previous</button>
+              <button type="button" class="btn btn-primary btn-next-step">Next: Documents &amp; Submit <i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+
+          <!-- STEP 4: Documents & Consent -->
+          <div class="form-step">
+            <div class="form-section-title"><i class="fas fa-file-upload" style="color:var(--primary);"></i> Documents &amp; Declaration</div>
+            <div class="form-group"><label>Passport-Size Photograph</label><input type="file" class="form-control" name="photo" accept="image/*"/><div class="form-note"><i class="fas fa-info-circle"></i> Upload a recent passport photo (JPG/PNG, max 2MB)</div></div>
+            <div class="form-group"><label>Copy of National ID / Passport</label><input type="file" class="form-control" name="idCopy" accept=".pdf,.jpg,.png"/><div class="form-note">Upload a clear copy of your ID or passport</div></div>
+            <div class="form-group"><label>CV / Resume (Optional)</label><input type="file" class="form-control" name="cv" accept=".pdf,.doc,.docx"/></div>
+            <div class="form-group"><label>Any Professional Licences / Certificates (Optional)</label><input type="file" class="form-control" name="certs" accept=".pdf,.jpg,.png" multiple/></div>
+            <div class="divider"></div>
+            <div class="form-section-title"><i class="fas fa-shield-halved" style="color:var(--primary);"></i> Declaration &amp; Consent</div>
+            <div style="background:var(--light-grey);border-radius:8px;padding:20px;margin-bottom:20px;font-size:13px;color:var(--grey);line-height:1.8;">
+              <p>I declare that the information provided in this application is true and correct. I agree to abide by the KPRA Constitution, Bylaws, Code of Ethics and Professional Standards. I understand that my membership is subject to approval by the Association and that the application fee is non-refundable. I authorize KPRA to verify the information provided herein.</p>
+            </div>
+            <div class="form-check"><input type="checkbox" id="consent" name="consent" required/><label for="consent">I agree to the KPRA Terms &amp; Conditions, Code of Ethics and the declaration above. <span style="color:var(--accent);">*</span></label></div>
+            <div class="form-check"><input type="checkbox" id="newsletter" name="newsletter"/><label for="newsletter">I would like to receive KPRA newsletters and updates by email.</label></div>
+            <div class="form-check"><input type="checkbox" id="directory" name="directory"/><label for="directory">I consent to my name and contact details being listed in the KPRA Professional Directory.</label></div>
+            <div class="form-nav">
+              <button type="button" class="btn btn-outline-primary btn-prev-step"><i class="fas fa-arrow-left"></i> Previous</button>
+              <button type="submit" class="btn btn-accent" style="font-size:15px;padding:16px 35px;"><i class="fas fa-paper-plane"></i> Submit Application</button>
+            </div>
+          </div>
+        </form>
+
+        <!-- SUCCESS MESSAGE -->
+        <div class="success-box" id="formSuccess">
+          <div class="icon"><i class="fas fa-check"></i></div>
+          <h2>Application Submitted!</h2>
+          <p>Thank you for applying to become a KPRA member. Your application has been received and will be reviewed within <strong>two weeks</strong>. You will be notified at the email address provided.</p>
+          <p style="margin-bottom:30px;">Please proceed to pay the non-refundable application fee of <strong>KSh 2,500</strong> to finalize your submission.</p>
+          <a href="index.html" class="btn btn-primary" style="margin-right:10px;"><i class="fas fa-home"></i> Back to Home</a>
+          <a href="benefits.html" class="btn btn-outline-primary"><i class="fas fa-star"></i> View Benefits</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer"><div class="footer-main"><div class="container"><div class="footer-grid"><div><div class="footer-logo"><img src="assets/images/logo.png" alt="KPRA"/></div><p class="footer-about">Kenya Professional Realtors Association — The Voice Of Real Estate Professionals In Kenya.</p><div class="footer-socials"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-x-twitter"></i></a><a href="#"><i class="fab fa-linkedin-in"></i></a></div></div><div><div class="footer-heading">Membership</div><ul class="footer-links"><li><a href="membership.html#associate">Associate Realtor</a></li><li><a href="membership.html#professional">Professional Realtor</a></li><li><a href="membership.html#broker">Broker</a></li><li><a href="membership.html#corporate">Corporate</a></li><li><a href="membership.html#affiliate">Affiliate</a></li></ul></div><div><div class="footer-heading">Quick Links</div><ul class="footer-links"><li><a href="about.html">About KPRA</a></li><li><a href="benefits.html">Member Benefits</a></li><li><a href="training.html">Training</a></li><li><a href="portal.html">School Portal</a></li><li><a href="contact.html">Contact</a></li></ul></div><div><div class="footer-heading">Contact</div><div class="footer-contact-item"><i class="fas fa-location-dot"></i><span>Park Suites, 44 Parklands Rd, 6th Floor</span></div><div class="footer-contact-item"><i class="fas fa-phone"></i><a href="tel:+254731644204">+254 731 644 204</a></div><div class="footer-contact-item"><i class="fas fa-envelope"></i><a href="mailto:info@kprakenya.co.ke">info@kprakenya.co.ke</a></div></div></div></div></div><div class="container"><div class="footer-bottom"><p>&copy; 2024 Kenya Professional Realtors Association (KPRA). All Rights Reserved.</p></div></div></footer>
+<div class="scroll-top"><i class="fas fa-arrow-up"></i></div>
+<script src="js/main.js"></script>
+<script>
+// Dynamic membership description display
+const memType = document.getElementById('membershipType');
+const descs = ['associate','professional','broker','corporate','affiliate'];
+const feeMap = {associate:7500,professional:12500,broker:20000,corporate:50000,affiliate:50000};
+const annFeeEl = document.getElementById('displayAnnFee');
+const totalEl = document.getElementById('displayTotal');
+
+function updateDesc(val){
+  descs.forEach(d=>{
+    const el=document.getElementById('mem-desc-'+d);
+    if(el) el.style.display = d===val?'block':'none';
+  });
+  if(val && feeMap[val]){
+    annFeeEl.textContent='KSh '+feeMap[val].toLocaleString();
+    totalEl.textContent='KSh '+(feeMap[val]+2500).toLocaleString();
+  } else {
+    annFeeEl.textContent='—';
+    totalEl.textContent='Select type';
+  }
+}
+memType?.addEventListener('change',()=>updateDesc(memType.value));
+
+// Wizard step dots sync
+const wizDots = document.querySelectorAll('.w-step');
+const sideDots = ['dot1','dot2','dot3','dot4'].map(id=>document.getElementById(id));
+let currentStep = 0;
+const origNextFn = window.onBtnNextStep;
+
+document.querySelectorAll('.btn-next-step').forEach((btn,i)=>{
+  btn.addEventListener('click',()=>{
+    setTimeout(()=>{
+      const activeStep = document.querySelector('.form-step.active');
+      if(!activeStep) return;
+      const steps = document.querySelectorAll('.form-step');
+      steps.forEach((s,si)=>{
+        if(s===activeStep){
+          currentStep=si;
+          wizDots.forEach((d,di)=>{
+            d.classList.toggle('active',di===si);
+            d.classList.toggle('done',di<si);
+          });
+          if(sideDots[si]){
+            sideDots.forEach((d,di)=>{ if(d){d.classList.toggle('active',di===si);d.classList.toggle('done',di<si);} });
+          }
+        }
+      });
+    },10);
+  });
+});
+</script>
+</body></html>
