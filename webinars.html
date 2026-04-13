@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>KPRA Webinars – Real Estate Training & Development</title>
+<meta name="description" content="KPRA Webinars – Join live real estate webinars, browse upcoming sessions, and access archived recordings for professional growth."/>
+<link rel="icon" href="assets/images/logo.png"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<link rel="stylesheet" href="css/style.css"/>
+<style>
+.webinar-tabs{display:flex;gap:10px;margin-bottom:40px;padding:8px;background:var(--light-grey);border-radius:10px;justify-content:center;}
+.webinar-tab-btn{padding:12px 25px;border:none;background:transparent;border-radius:7px;font-family:var(--font-main);font-weight:700;font-size:14px;cursor:pointer;transition:var(--transition);color:var(--grey);}
+.webinar-tab-btn.active{background:var(--primary);color:#fff;box-shadow:0 4px 15px rgba(96,182,197,.3);}
+.webinar-section{display:none;}
+.webinar-section.active{display:block;}
+.webinar-card{background:var(--white);border-radius:15px;overflow:hidden;box-shadow:0 5px 20px rgba(0,0,0,0.06);transition:var(--transition);border:1px solid var(--border);margin-bottom:25px;}
+.webinar-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-hover);}
+.webinar-img-wrap{position:relative;height:200px;}
+.webinar-img-wrap img{width:100%;height:100%;object-fit:cover;}
+.webinar-status{position:absolute;top:15px;left:15px;padding:5px 12px;border-radius:20px;font-size:11px;font-weight:700;text-transform:uppercase;color:#fff;}
+.webinar-status.live{background:var(--accent);animation:pulse 2s infinite;}
+.webinar-status.upcoming{background:var(--primary);}
+.webinar-status.past{background:var(--grey);}
+.webinar-body{padding:25px;}
+.webinar-meta{display:flex;gap:15px;font-size:13px;color:var(--grey);margin-bottom:10px;}
+.webinar-title{font-size:1.2rem;font-weight:800;color:var(--dark);margin-bottom:10px;line-height:1.4;}
+.webinar-host{display:flex;align-items:center;gap:10px;margin-top:15px;padding-top:15px;border-top:1px solid var(--border);}
+.webinar-host img{width:35px;height:35px;border-radius:50%;object-fit:cover;}
+.webinar-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:25px;}
+@keyframes pulse{0%{opacity:1;}50%{opacity:0.7;}100%{opacity:1;}}
+@media(max-width:992px){.webinar-grid{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:768px){.webinar-grid{grid-template-columns:1fr;}.webinar-tabs{flex-direction:column;}}
+</style>
+</head>
+<body>
+<div class="topbar"><div class="container"><div class="topbar-left"><span><i class="fas fa-phone"></i> +254 731 644 204</span><a href="mailto:info@kprakenya.co.ke"><i class="fas fa-envelope"></i> info@kprakenya.co.ke</a></div><div class="topbar-right"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-x-twitter"></i></a><a href="#"><i class="fab fa-linkedin-in"></i></a></div></div></div>
+<nav class="navbar"><div class="container"><div class="nav-inner"><a href="index.html" class="nav-logo"><img src="assets/images/logo.png" alt="KPRA Logo"/></a><button class="hamburger"><span></span><span></span><span></span></button>
+<ul class="nav-menu">
+  <li><a href="index.html">Home <i class="fas fa-chevron-down"></i></a><ul class="dropdown"><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="team.html">KPRA Team</a></li></ul></li>
+  <li><a href="mls.html">MLS Portal <i class="fas fa-chevron-down"></i></a><ul class="dropdown"><li><a href="mls.html">Buy a Property</a></li><li><a href="mls.html#sell">Sell a Property</a></li><li><a href="mls.html#list">List a Property (for members)</a></li></ul></li>
+  <li><a href="membership.html">Membership <i class="fas fa-chevron-down"></i></a><ul class="dropdown"><li><a href="membership.html">Membership Packages</a></li><li><a href="benefits.html">Member Benefits</a></li><li><a href="apply.html">Apply Now</a></li></ul></li>
+  <li class="active"><a href="training.html">Training <i class="fas fa-chevron-down"></i></a><ul class="dropdown"><li><a href="training.html">Training &amp; Certification</a></li><li><a href="webinars.html">Webinars</a></li><li><a href="portal.html">School Portal</a></li></ul></li>
+  <li><a href="networking.html">Power Networking <i class="fas fa-chevron-down"></i></a><ul class="dropdown"><li><a href="networking.html">About Power Networking</a></li><li><a href="networking.html#events">Networking Events</a></li><li><a href="networking.html#gallery">Gallery</a></li></ul></li>
+  <li><a href="events.html">Events <i class="fas fa-chevron-down"></i></a><ul class="dropdown"><li><a href="events.html">KPRA Events</a></li><li><a href="news.html">Real Estate News</a></li></ul></li>
+  <li><a href="#">Publications <i class="fas fa-chevron-down"></i></a><ul class="dropdown"><li><a href="#">Professional Realtor Magazine</a></li><li><a href="#">Newsletter</a></li></ul></li>
+  <li><a href="contact.html">Contact Us</a></li>
+  <li><a href="apply.html" class="nav-cta">Join KPRA</a></li>
+</ul></div></div></nav>
+
+<section class="page-hero">
+  <div class="container"><div class="page-hero-inner">
+    <h1>KPRA <span style="color:var(--primary)">Webinars</span></h1>
+    <p>Professional real estate insights delivered straight to your screen. Live, interactive, and recorded sessions.</p>
+    <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Training</span><span>/</span><span>Webinars</span></div>
+  </div></div>
+</section>
+
+<section class="section-pad">
+  <div class="container">
+    <div class="webinar-tabs">
+      <button class="webinar-tab-btn active" onclick="showWebinars('live')"><i class="fas fa-broadcast-tower"></i> Live Webinars</button>
+      <button class="webinar-tab-btn" onclick="showWebinars('upcoming')"><i class="fas fa-calendar-alt"></i> Upcoming Webinars</button>
+      <button class="webinar-tab-btn" onclick="showWebinars('past')"><i class="fas fa-history"></i> Past Webinars / Archive</button>
+    </div>
+
+    <!-- LIVE WEBINARS -->
+    <div id="live" class="webinar-section active">
+      <div class="section-header" style="text-align:left; margin-bottom: 30px;">
+        <h2 class="section-title">Happening <span>Now</span></h2>
+        <p>Don't miss out on these live sessions. Join the conversation today.</p>
+      </div>
+      <div class="webinar-grid">
+        <div class="webinar-card">
+          <div class="webinar-img-wrap">
+            <img src="assets/images/hero1.png" alt="Live Webinar">
+            <span class="webinar-status live">Live Now</span>
+          </div>
+          <div class="webinar-body">
+            <div class="webinar-meta"><span><i class="fas fa-clock"></i> Started 15m ago</span><span><i class="fas fa-users"></i> 124 Watching</span></div>
+            <h3 class="webinar-title">Navigating the 2026 Kenyan Real Estate Market Trends</h3>
+            <p style="font-size:14px; color:var(--grey);">A deep dive into emerging property hotspots and investment opportunities in Nairobi and beyond.</p>
+            <div class="webinar-host">
+              <img src="assets/images/logo.png" alt="Host">
+              <div style="font-size:13px;"><strong>Host:</strong> Njuki Kihori, KPRA Director</div>
+            </div>
+            <a href="#" class="btn btn-primary" style="width:100%; justify-content:center; margin-top:20px;">Join Now <i class="fas fa-video"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- UPCOMING WEBINARS -->
+    <div id="upcoming" class="webinar-section">
+      <div class="section-header" style="text-align:left; margin-bottom: 30px;">
+        <h2 class="section-title">Upcoming <span>Sessions</span></h2>
+        <p>Mark your calendar for these professional development opportunities.</p>
+      </div>
+      <div class="webinar-grid">
+        <div class="webinar-card">
+          <div class="webinar-img-wrap">
+            <img src="assets/images/hero2.png" alt="Upcoming Webinar">
+            <span class="webinar-status upcoming">Scheduled</span>
+          </div>
+          <div class="webinar-body">
+            <div class="webinar-meta"><span><i class="fas fa-calendar-day"></i> April 28, 2026</span><span><i class="fas fa-clock"></i> 2:00 PM</span></div>
+            <h3 class="webinar-title">Digital Marketing Strategies for Modern Realtors</h3>
+            <p style="font-size:14px; color:var(--grey);">Learn how to leverage social media and AI to boost your property listings and reach more clients.</p>
+            <div class="webinar-host">
+              <img src="assets/images/logo.png" alt="Host">
+              <div style="font-size:13px;"><strong>Host:</strong> KPRA Marketing Team</div>
+            </div>
+            <a href="#" class="btn btn-outline-primary" style="width:100%; justify-content:center; margin-top:20px;">Register / Join <i class="fas fa-calendar-check"></i></a>
+          </div>
+        </div>
+        <div class="webinar-card">
+          <div class="webinar-img-wrap">
+            <img src="assets/images/hero3.png" alt="Upcoming Webinar">
+            <span class="webinar-status upcoming">Scheduled</span>
+          </div>
+          <div class="webinar-body">
+            <div class="webinar-meta"><span><i class="fas fa-calendar-day"></i> May 5, 2026</span><span><i class="fas fa-clock"></i> 10:00 AM</span></div>
+            <h3 class="webinar-title">Real Estate Law: Understanding the New Land Act Clauses</h3>
+            <p style="font-size:14px; color:var(--grey);">Expert legal insights on recent changes to Kenyan land laws and how they affect your practice.</p>
+            <div class="webinar-host">
+              <img src="assets/images/logo.png" alt="Host">
+              <div style="font-size:13px;"><strong>Host:</strong> Legal Committee</div>
+            </div>
+            <a href="#" class="btn btn-outline-primary" style="width:100%; justify-content:center; margin-top:20px;">Register / Join <i class="fas fa-calendar-check"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAST WEBINARS -->
+    <div id="past" class="webinar-section">
+      <div class="section-header" style="text-align:left; margin-bottom: 30px;">
+        <h2 class="section-title">Webinar <span>Archive</span></h2>
+        <p>Watch recorded sessions from the KPRA school and past students at your own pace.</p>
+      </div>
+      <div class="webinar-grid">
+        <div class="webinar-card">
+          <div class="webinar-img-wrap">
+            <img src="assets/images/hero1.png" alt="Past Webinar">
+            <span class="webinar-status past">Recorded</span>
+          </div>
+          <div class="webinar-body">
+            <div class="webinar-meta"><span><i class="fas fa-film"></i> 1h 20m</span><span><i class="fas fa-eye"></i> 1.2k Views</span></div>
+            <h3 class="webinar-title">Mastering Property Valuation Basics</h3>
+            <p style="font-size:14px; color:var(--grey);">A comprehensive workshop on estimating property value in Kenya's urban markets.</p>
+            <div class="webinar-host">
+              <img src="assets/images/logo.png" alt="Host">
+              <div style="font-size:13px;"><strong>Host:</strong> Valuation Workshop</div>
+            </div>
+            <a href="#" class="btn btn-dark" style="width:100%; justify-content:center; margin-top:20px;">Watch Replay <i class="fas fa-play-circle"></i></a>
+          </div>
+        </div>
+        <div class="webinar-card">
+          <div class="webinar-img-wrap">
+            <img src="assets/images/hero2.png" alt="Past Webinar">
+            <span class="webinar-status past">Recorded</span>
+          </div>
+          <div class="webinar-body">
+            <div class="webinar-meta"><span><i class="fas fa-film"></i> 45m</span><span><i class="fas fa-eye"></i> 850 Views</span></div>
+            <h3 class="webinar-title">Effective Negotiation for Real Estate Closings</h3>
+            <p style="font-size:14px; color:var(--grey);">Psychology of selling and negotiation tactics for top-performing realtors.</p>
+            <div class="webinar-host">
+              <img src="assets/images/logo.png" alt="Host">
+              <div style="font-size:13px;"><strong>Host:</strong> Sales Training</div>
+            </div>
+            <a href="#" class="btn btn-dark" style="width:100%; justify-content:center; margin-top:20px;">Watch Replay <i class="fas fa-play-circle"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="training-cta section-pad-sm"><div class="container"><div class="training-cta-inner"><div><h2>Never Miss a <span>Session</span></h2><p>Subscribe to our webinar alerts and stay ahead of the curve in the real estate industry.</p></div><div><a href="#" class="btn btn-primary"><i class="fas fa-envelope"></i> Get Notifications</a></div></div></div></section>
+
+<footer class="footer"><div class="footer-main"><div class="container"><div class="footer-grid"><div><div class="footer-logo"><img src="assets/images/logo.png" alt="KPRA"/></div><p class="footer-about">Kenya Professional Realtors Association — The Voice Of Real Estate Professionals In Kenya.</p><div class="footer-socials"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-x-twitter"></i></a><a href="#"><i class="fab fa-linkedin-in"></i></a></div></div><div><div class="footer-heading">Quick Links</div><ul class="footer-links"><li><a href="about.html">About KPRA</a></li><li><a href="team.html">KPRA Team</a></li><li><a href="membership.html">Membership</a></li><li><a href="training.html">Training</a></li><li><a href="portal.html">School Portal</a></li><li><a href="webinars.html">Webinars</a></li></ul></div><div><div class="footer-heading">Training</div><ul class="footer-links"><li><a href="webinars.html#live">Live Sessions</a></li><li><a href="webinars.html#upcoming">Upcoming Events</a></li><li><a href="webinars.html#past">Archives</a></li><li><a href="portal.html">Student Portal</a></li></ul></div><div><div class="footer-heading">Contact</div><div class="footer-contact-item"><i class="fas fa-location-dot"></i><span>Park Suites, 44 Parklands Rd, 6th Floor</span></div><div class="footer-contact-item"><i class="fas fa-phone"></i><a href="tel:+254731644204">+254 731 644 204</a></div><div class="footer-contact-item"><i class="fas fa-envelope"></i><a href="mailto:info@kprakenya.co.ke">info@kprakenya.co.ke</a></div></div></div></div></div><div class="container"><div class="footer-bottom"><p>&copy; 2026 Kenya Professional Realtors Association (KPRA). All Rights Reserved.</p></div></div></footer>
+<div class="scroll-top"><i class="fas fa-arrow-up"></i></div>
+<script src="js/main.js"></script>
+<script>
+function showWebinars(sectionId){
+  document.querySelectorAll('.webinar-section').forEach(s=>s.classList.remove('active'));
+  document.querySelectorAll('.webinar-tab-btn').forEach(b=>b.classList.remove('active'));
+  document.getElementById(sectionId).classList.add('active');
+  event.currentTarget.classList.add('active');
+}
+</script>
+</body></html>

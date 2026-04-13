@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>MLS Portal – KPRA Kenya Market Listing Service</title>
+<meta name="description" content="KPRA Market Listing Service (MLS) – The premier platform to buy, sell and list properties in Kenya for members and non-members."/>
+<link rel="icon" href="assets/images/logo.png"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<link rel="stylesheet" href="css/style.css"/>
+<style>
+.mls-hero{background:linear-gradient(135deg,var(--dark),var(--dark2));padding:100px 0;color:#fff;text-align:center;position:relative;overflow:hidden;}
+.mls-hero::before{content:'';position:absolute;inset:0;background:url('assets/images/hero1.png') center/cover;opacity:0.1;}
+.mls-hero-inner{position:relative;z-index:1;}
+.pricing-card{background:var(--white);border-radius:15px;padding:30px;box-shadow:var(--shadow);text-align:center;transition:var(--transition);border-top:5px solid var(--primary);}
+.pricing-card:hover{transform:translateY(-10px);box-shadow:var(--shadow-hover);}
+.pricing-card.non-member{border-top-color:var(--accent);}
+.price-tag{font-size:2.5rem;font-weight:900;color:var(--dark);margin:15px 0;}
+.listing-form{background:var(--light-grey);padding:40px;border-radius:15px;box-shadow:0 5px 20px rgba(0,0,0,0.05);}
+.prop-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:25px;margin-top:40px;}
+.prop-card{background:var(--white);border-radius:12px;overflow:hidden;box-shadow:0 4px 15px rgba(0,0,0,0.08);transition:var(--transition);}
+.prop-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-hover);}
+.prop-img{height:200px;width:100%;object-fit:cover;}
+.prop-body{padding:20px;}
+.prop-price{font-size:1.2rem;font-weight:800;color:var(--primary);margin-bottom:5px;}
+.prop-title{font-size:1rem;font-weight:700;margin-bottom:10px;color:var(--dark);}
+.prop-meta{display:flex;gap:15px;font-size:13px;color:var(--grey);margin-bottom:15px;}
+.prop-meta span{display:flex;align-items:center;gap:5px;}
+@media(max-width:992px){.prop-grid{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:768px){.prop-grid{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+<div class="topbar"><div class="container"><div class="topbar-left"><span><i class="fas fa-phone"></i> +254 731 644 204</span><a href="mailto:info@kprakenya.co.ke"><i class="fas fa-envelope"></i> info@kprakenya.co.ke</a></div><div class="topbar-right"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-x-twitter"></i></a><a href="#"><i class="fab fa-linkedin-in"></i></a></div></div></div>
+<nav class="navbar"><div class="container"><div class="nav-inner"><a href="index.html" class="nav-logo"><img src="assets/images/logo.png" alt="KPRA Logo"/></a><button class="hamburger"><span></span><span></span><span></span></button>
+<ul class="nav-menu">
+  <li><a href="index.html">Home <i class="fas fa-chevron-down"></i></a><ul class="dropdown"><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="team.html">KPRA Team</a></li></ul></li>
+  <li class="active"><a href="mls.html">MLS Portal <i class="fas fa-chevron-down"></i></a><ul class="dropdown"><li><a href="mls.html">Buy a Property</a></li><li><a href="mls.html#sell">Sell a Property</a></li><li><a href="mls.html#list">List a Property (for members)</a></li></ul></li>
+  <li><a href="membership.html">Membership <i class="fas fa-chevron-down"></i></a><ul class="dropdown"><li><a href="membership.html">Membership Packages</a></li><li><a href="benefits.html">Member Benefits</a></li><li><a href="apply.html">Apply Now</a></li></ul></li>
+  <li><a href="training.html">Training <i class="fas fa-chevron-down"></i></a><ul class="dropdown"><li><a href="training.html">Training &amp; Certification</a></li><li><a href="webinars.html">Webinars</a></li><li><a href="portal.html">School Portal</a></li></ul></li>
+  <li><a href="networking.html">Power Networking <i class="fas fa-chevron-down"></i></a><ul class="dropdown"><li><a href="networking.html">About Power Networking</a></li><li><a href="networking.html#events">Networking Events</a></li><li><a href="networking.html#gallery">Gallery</a></li></ul></li>
+  <li><a href="events.html">Events <i class="fas fa-chevron-down"></i></a><ul class="dropdown"><li><a href="events.html">KPRA Events</a></li><li><a href="news.html">Real Estate News</a></li></ul></li>
+  <li><a href="#">Publications <i class="fas fa-chevron-down"></i></a><ul class="dropdown"><li><a href="#">Professional Realtor Magazine</a></li><li><a href="#">Newsletter</a></li></ul></li>
+  <li><a href="contact.html">Contact Us</a></li>
+  <li><a href="apply.html" class="nav-cta">Join KPRA</a></li>
+</ul></div></div></nav>
+
+<section class="mls-hero">
+  <div class="container"><div class="mls-hero-inner">
+    <div class="section-tag" style="color:var(--primary);">Market Listing Service</div>
+    <h1>KPRA <span style="color:var(--primary)">MLS Portal</span></h1>
+    <p>The consolidated platform for Kenya's professional realtors to list, buy, and sell properties with trust and efficiency.</p>
+    <div class="breadcrumb" style="justify-content:center; margin-top: 20px;"><a href="index.html">Home</a><span>/</span><span>MLS Portal</span></div>
+  </div></div>
+</section>
+
+<section class="section-pad">
+  <div class="container">
+    <div class="about-grid">
+      <div data-aos="fade-right">
+        <div class="section-tag">What is MLS?</div>
+        <h2 class="section-title">A Unified <span>Marketplace</span></h2>
+        <div class="section-line" style="margin: 0 0 20px;"></div>
+        <p style="margin-bottom: 20px;">The KPRA Market Listing Service (MLS) is a professional platform where members and non-members can list, buy, and sell properties across Kenya. It serves as a central hub that connects sellers with potential buyers through a network of accredited real estate professionals.</p>
+        <p style="margin-bottom: 25px;">By using the KPRA MLS, you tap into a verified database of property listings, ensuring transparency, professional standards, and faster transaction times for both realtors and property seekers.</p>
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:15px;">
+           <div style="background:var(--light-grey); padding:20px; border-radius:10px;"><i class="fas fa-check-circle text-primary"></i> Verified Listings</div>
+           <div style="background:var(--light-grey); padding:20px; border-radius:10px;"><i class="fas fa-check-circle text-primary"></i> Wider Reach</div>
+           <div style="background:var(--light-grey); padding:20px; border-radius:10px;"><i class="fas fa-check-circle text-primary"></i> Professional Network</div>
+           <div style="background:var(--light-grey); padding:20px; border-radius:10px;"><i class="fas fa-check-circle text-primary"></i> Secure Transactions</div>
+        </div>
+      </div>
+      <div data-aos="fade-left">
+        <div class="listing-form" id="list">
+          <h3 style="margin-bottom: 20px; text-align: center;">List Your <span class="text-primary">Property</span></h3>
+          <form onsubmit="return false;">
+             <div style="display:grid; grid-template-columns:1fr 1fr; gap:15px; margin-bottom:15px;">
+                <input type="text" class="form-control" placeholder="Property Title" required style="width:100%; padding:12px; border:1px solid var(--border); border-radius:5px;">
+                <select class="form-control" style="width:100%; padding:12px; border:1px solid var(--border); border-radius:5px;">
+                   <option>Property Type</option>
+                   <option>Apartment</option>
+                   <option>House</option>
+                   <option>Commercial</option>
+                   <option>Land</option>
+                </select>
+             </div>
+             <div style="margin-bottom:15px;">
+                <input type="text" class="form-control" placeholder="Location (e.g. Kilimani, Nairobi)" required style="width:100%; padding:12px; border:1px solid var(--border); border-radius:5px;">
+             </div>
+             <div style="display:grid; grid-template-columns:1fr 1fr; gap:15px; margin-bottom:15px;">
+                <input type="number" class="form-control" placeholder="Price (KES)" required style="width:100%; padding:12px; border:1px solid var(--border); border-radius:5px;">
+                <input type="text" class="form-control" placeholder="Bedrooms/Size" style="width:100%; padding:12px; border:1px solid var(--border); border-radius:5px;">
+             </div>
+             <div style="margin-bottom:20px;">
+                <textarea class="form-control" placeholder="Description" style="width:100%; padding:12px; border:1px solid var(--border); border-radius:5px; height:100px;"></textarea>
+             </div>
+             <button class="btn btn-primary" style="width:100%; justify-content:center;" onclick="const btn=this; btn.textContent='Submitting...'; setTimeout(()=>{ alert('Listing submitted successfully! Our team will review and contact you for payment.'); btn.textContent='Submit Listing'; btn.closest('form').reset(); }, 1500);">Submit Listing</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-pad bg-light">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <div class="section-tag">Pricing</div>
+      <h2 class="section-title">Listing <span>Fees</span></h2>
+      <p class="section-desc">Choose the listing package that applies to you. KPRA members enjoy discounted rates.</p>
+    </div>
+    
+    <div class="about-grid" style="max-width:900px; margin: 0 auto;">
+      <div class="pricing-card" data-aos="fade-right">
+        <h3 style="color:var(--primary);">KPRA Members</h3>
+        <p>Verified professionals with active membership.</p>
+        <div class="price-tag">KES 1,500</div>
+        <p style="font-size:13px; color:var(--grey);">Per active listing for 30 days</p>
+        <button class="btn btn-primary" style="margin-top:20px; width:100%; justify-content:center;">List Now</button>
+      </div>
+      
+      <div class="pricing-card non-member" data-aos="fade-left">
+        <h3 style="color:var(--accent);">Non-Members</h3>
+        <p>Private sellers and non-registered agents.</p>
+        <div class="price-tag">KES 2,500</div>
+        <p style="font-size:13px; color:var(--grey);">Per active listing for 30 days</p>
+        <a href="apply.html" class="btn btn-outline-primary" style="margin-top:20px; width:100%; justify-content:center; border-color:var(--accent); color:var(--accent);">Join KPRA & Save KES 1,000</a>
+      </div>
+    </div>
+    
+    <div style="text-align:center; margin-top:50px;" data-aos="zoom-in">
+       <div class="eligibility-box" style="display:inline-block; padding:25px 50px; background:var(--white); border-left: 5px solid var(--primary);">
+          <h3 style="margin-bottom:10px;">Want to access discounted rates?</h3>
+          <p>Join the Kenya Professional Realtors Association today and get professional accreditation.</p>
+          <a href="apply.html" class="btn btn-primary" style="margin-top:15px;">Become a KPRA Member</a>
+       </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-pad" id="marketplace">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <div class="section-tag">Public Marketplace</div>
+      <h2 class="section-title">Public <span>Marketplace</span></h2>
+      <p class="section-desc">Browse available properties from our certified realtors across the country.</p>
+    </div>
+    
+    <div class="prop-grid">
+       <!-- LISTING 1: RUAKA -->
+       <div class="prop-card" data-aos="fade-up">
+          <img src="assets/images/hero1.png" class="prop-img" alt="Ruaka Apartment">
+          <div class="prop-body">
+             <div class="prop-price">KES 80,000 / mo</div>
+             <h3 class="prop-title">2 Bed Apartment with En Suite</h3>
+             <div class="prop-meta">
+                <span><i class="fas fa-bed"></i> 2 Bed</span>
+                <span><i class="fas fa-location-dot"></i> Ruaka, Nairobi</span>
+             </div>
+             <a href="apply.html" class="btn btn-outline-primary" style="width:100%; justify-content:center;">View Details</a>
+          </div>
+       </div>
+       <!-- LISTING 2: DENNIS PRITT -->
+       <div class="prop-card" data-aos="fade-up" data-aos-delay="100">
+          <img src="assets/images/hero2.png" class="prop-img" alt="Kilimani Apartment">
+          <div class="prop-body">
+             <div class="prop-price">KES 90,000 / mo</div>
+             <h3 class="prop-title">3 Bed Apartment at Dennis Pritt Rd</h3>
+             <div class="prop-meta">
+                <span><i class="fas fa-bed"></i> 3 Bed</span>
+                <span><i class="fas fa-location-dot"></i> Kilimani, Nairobi</span>
+             </div>
+             <a href="apply.html" class="btn btn-outline-primary" style="width:100%; justify-content:center;">View Details</a>
+          </div>
+       </div>
+       <!-- LISTING 3: WESTLANDS -->
+       <div class="prop-card" data-aos="fade-up" data-aos-delay="200">
+          <img src="assets/images/hero3.png" class="prop-img" alt="Westlands Apartment">
+          <div class="prop-body">
+             <div class="prop-price">KES 190,000 / mo</div>
+             <h3 class="prop-title">Serviced 2 Bed Apartment</h3>
+             <div class="prop-meta">
+                <span><i class="fas fa-bed"></i> 2 Bed</span>
+                <span><i class="fas fa-location-dot"></i> Westlands, Nairobi</span>
+             </div>
+             <a href="apply.html" class="btn btn-outline-primary" style="width:100%; justify-content:center;">View Details</a>
+          </div>
+       </div>
+       <!-- LISTING 4: EMBAKASI -->
+       <div class="prop-card" data-aos="fade-up">
+          <img src="assets/images/hero1.png" class="prop-img" alt="Embakasi Apartment">
+          <div class="prop-body">
+             <div class="prop-price">KES 42,000 / mo</div>
+             <h3 class="prop-title">3 Bed Apartment at Embakasi</h3>
+             <div class="prop-meta">
+                <span><i class="fas fa-bed"></i> 3 Bed</span>
+                <span><i class="fas fa-location-dot"></i> Embakasi, Nairobi</span>
+             </div>
+             <a href="apply.html" class="btn btn-outline-primary" style="width:100%; justify-content:center;">View Details</a>
+          </div>
+       </div>
+       <!-- LISTING 5: TATU CITY -->
+       <div class="prop-card" data-aos="fade-up" data-aos-delay="100">
+          <img src="assets/images/hero2.png" class="prop-img" alt="Tatu City Apartment">
+          <div class="prop-body">
+             <div class="prop-price">KES 60,000 / mo</div>
+             <h3 class="prop-title">Serviced 2 Bed in Tatu City</h3>
+             <div class="prop-meta">
+                <span><i class="fas fa-bed"></i> 2 Bed</span>
+                <span><i class="fas fa-location-dot"></i> Ruiru, Tatu City</span>
+             </div>
+             <a href="apply.html" class="btn btn-outline-primary" style="width:100%; justify-content:center;">View Details</a>
+          </div>
+       </div>
+       <!-- LISTING 6: RUNDA -->
+       <div class="prop-card" data-aos="fade-up" data-aos-delay="200">
+          <img src="assets/images/hero3.png" class="prop-img" alt="Runda Guest Wing">
+          <div class="prop-body">
+             <div class="prop-price">KES 90,000 / mo</div>
+             <h3 class="prop-title">1 Bed Guest Wing + Gen</h3>
+             <div class="prop-meta">
+                <span><i class="fas fa-bed"></i> 1 Bed</span>
+                <span><i class="fas fa-location-dot"></i> Runda, Nairobi</span>
+             </div>
+             <a href="apply.html" class="btn btn-outline-primary" style="width:100%; justify-content:center;">View Details</a>
+          </div>
+       </div>
+    </div>
+    
+    <div style="text-align:center; margin-top:40px;">
+       <button class="btn btn-dark" onclick="alert('Join KPRA to see more premium listings!'); window.location.href='apply.html';">Load More Listings <i class="fas fa-plus"></i></button>
+    </div>
+  </div>
+</section>
+
+<footer class="footer"><div class="footer-main"><div class="container"><div class="footer-grid"><div><div class="footer-logo"><img src="assets/images/logo.png" alt="KPRA"/></div><p class="footer-about">Kenya Professional Realtors Association — The Voice Of Real Estate Professionals In Kenya.</p><div class="footer-socials"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-x-twitter"></i></a><a href="#"><i class="fab fa-linkedin-in"></i></a></div></div><div><div class="footer-heading">Quick Links</div><ul class="footer-links"><li><a href="about.html">About KPRA</a></li><li><a href="team.html">KPRA Team</a></li><li><a href="membership.html">Membership</a></li><li><a href="training.html">Training</a></li><li><a href="mls.html">MLS Portal</a></li><li><a href="events.html">Events</a></li></ul></div><div><div class="footer-heading">MLS Portal</div><ul class="footer-links"><li><a href="#marketplace">Public Marketplace</a></li><li><a href="#list">List a Property</a></li><li><a href="apply.html">Join KPRA</a></li></ul></div><div><div class="footer-heading">Contact</div><div class="footer-contact-item"><i class="fas fa-location-dot"></i><span>Park Suites, 44 Parklands Rd, 6th Floor</span></div><div class="footer-contact-item"><i class="fas fa-phone"></i><a href="tel:+254731644204">+254 731 644 204</a></div><div class="footer-contact-item"><i class="fas fa-envelope"></i><a href="mailto:info@kprakenya.co.ke">info@kprakenya.co.ke</a></div></div></div></div></div><div class="container"><div class="footer-bottom"><p>&copy; 2026 Kenya Professional Realtors Association (KPRA). All Rights Reserved.</p></div></div></footer>
+<div class="scroll-top"><i class="fas fa-arrow-up"></i></div>
+<script src="js/main.js"></script>
+</body></html>
