@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>KPRA Publications – Magazines, Newsletters & eBooks</title>
+<meta name="description" content="Access KPRA publications including the Professional Realtor Magazine, weekly newsletters, and real estate eBooks by Mr. Peter Wairigi."/>
+<link rel="icon" href="assets/images/logo.png"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<link rel="stylesheet" href="css/style.css"/>
+<style>
+.pub-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 40px; }
+.pub-card { background: var(--white); border-radius: 15px; border-left: 5px solid var(--primary); padding: 40px; box-shadow: var(--shadow); transition: var(--transition); }
+.pub-card:hover { transform: translateX(10px); }
+.pub-card h3 { font-size: 1.5rem; margin-bottom: 15px; }
+.ebook-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 30px; margin-top: 40px; }
+.ebook-card { background: var(--white); border-radius: 15px; overflow: hidden; box-shadow: var(--shadow); border: 1px solid var(--border); display: flex; flex-direction: column; }
+.ebook-img { height: 350px; background: var(--dark); display: flex; align-items: center; justify-content: center; color: white; position: relative; }
+.ebook-img i { font-size: 5rem; opacity: 0.2; }
+.ebook-body { padding: 25px; flex: 1; display: flex; flex-direction: column; }
+.ebook-author { font-size: 13px; color: var(--primary); font-weight: 700; text-transform: uppercase; margin-bottom: 10px; }
+.ebook-title { font-size: 1.2rem; font-weight: 800; margin-bottom: 15px; }
+.ebook-desc { font-size: 14px; color: var(--grey); margin-bottom: 20px; line-height: 1.6; }
+.ebook-footer { margin-top: auto; padding-top: 20px; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; }
+</style>
+</head>
+<body>
+<div class="topbar"><div class="container"><div class="topbar-left"><span><i class="fas fa-phone"></i> +254 731 644 204</span><a href="mailto:info@kprakenya.co.ke"><i class="fas fa-envelope"></i> info@kprakenya.co.ke</a></div><div class="topbar-right"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-x-twitter"></i></a><a href="#"><i class="fab fa-linkedin-in"></i></a></div></div></div>
+<nav class="navbar"><div class="container"><div class="nav-inner"><a href="index.html" class="nav-logo"><img src="assets/images/logo.png" alt="KPRA Logo"/></a><button class="hamburger"><span></span><span></span><span></span></button>
+<ul class="nav-menu">
+  <li>
+    <a href="index.html">Home <i class="fas fa-chevron-down"></i></a>
+    <ul class="dropdown">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="team.html">KPRA Team</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </li>
+  <li>
+    <a href="mls.html">MLS <i class="fas fa-chevron-down"></i></a>
+    <ul class="dropdown">
+      <li><a href="mls.html">Buy a Property</a></li>
+      <li><a href="mls.html#sell">Sell a Property</a></li>
+      <li><a href="mls.html#list">List a Property (for members)</a></li>
+    </ul>
+  </li>
+  <li>
+    <a href="membership.html" class="nav-membership">Membership <i class="fas fa-chevron-down"></i></a>
+    <ul class="dropdown">
+      <li><a href="membership.html">Membership Packages</a></li>
+      <li><a href="benefits.html">Member Benefits</a></li>
+      <li><a href="apply.html">Apply Now</a></li>
+    </ul>
+  </li>
+  <li>
+    <a href="training.html">Training <i class="fas fa-chevron-down"></i></a>
+    <ul class="dropdown">
+      <li><a href="training.html">Training &amp; Certification</a></li>
+      <li><a href="webinars.html">Webinars</a></li>
+      <li><a href="portal.html">School Portal</a></li>
+    </ul>
+  </li>
+  <li>
+    <a href="events.html">Events <i class="fas fa-chevron-down"></i></a>
+    <ul class="dropdown">
+      <li><a href="events.html#golf">Corporate Golf</a></li>
+      <li><a href="events.html#awards">Annual Awards Dinner</a></li>
+      <li><a href="events.html#launches">Product Launches</a></li>
+      <li><a href="events.html#openhouses">Open Houses</a></li>
+      <li><a href="networking.html">Power Networking</a></li>
+      <li><a href="events.html#special">Special Business Events</a></li>
+    </ul>
+  </li>
+  <li><a href="merchandise.html">Merchandise</a></li>
+  <li class="active">
+    <a href="publications.html">Publications <i class="fas fa-chevron-down"></i></a>
+    <ul class="dropdown">
+      <li><a href="publications.html#magazine">Professional Realtor Magazine</a></li>
+      <li><a href="publications.html#newsletter">Newsletter</a></li>
+      <li><a href="news.html">Real Estate News</a></li>
+      <li><a href="#ebooks">eBooks</a></li>
+    </ul>
+  </li>
+  <li><a href="apply.html" class="nav-cta">Join KPRA</a></li>
+</ul></div></div></nav>
+
+<section class="page-hero"><div class="container"><div class="page-hero-inner"><h1>KPRA <span style="color:var(--primary)">Publications</span></h1><p>Stay informed with industry leading insights, magazines, and exclusive real estate books authored by the KPRA team.</p><div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Publications</span></div></div></div></section>
+
+<section class="section-pad">
+  <div class="container">
+    <div class="pub-grid">
+      <div class="pub-card" id="magazine" data-aos="fade-up">
+        <div class="section-tag">Premium Content</div>
+        <h3>Professional Realtor Magazine</h3>
+        <p>Our flagship publication featuring in-depth market analysis, member spotlights, and industry trends shaping the Kenyan landscape.</p>
+        <br/><a href="#" class="btn btn-outline-primary">Read Latest Issue</a>
+      </div>
+      <div class="pub-card" id="newsletter" data-aos="fade-up" data-aos-delay="100">
+        <div class="section-tag">Weekly Updates</div>
+        <h3>Weekly Newsletter</h3>
+        <p>The must-read summary for every real estate professional. Get the most important news delivered straight to your inbox.</p>
+        <br/><a href="#subscribe" class="btn btn-outline-primary">Subscribe Now</a>
+      </div>
+    </div>
+
+    <!-- EBOOKS SECTION -->
+    <div id="ebooks" class="section-pad">
+      <div class="section-header" data-aos="fade-up">
+        <div class="section-tag">New Subsection</div>
+        <h2 class="section-title">Real Estate <span>eBooks</span></h2>
+        <p class="section-desc">Practical guides and professional literature written by the KPRA team and industry experts.</p>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="ebook-grid">
+        <!-- BOOK 1 -->
+        <div class="ebook-card" data-aos="fade-up">
+          <div class="ebook-img">
+            <i class="fas fa-book"></i>
+            <div style="position:absolute; bottom:20px; left:20px; font-weight:800; font-size:1.5rem;">The Modern Realtor</div>
+          </div>
+          <div class="ebook-body">
+            <div class="ebook-author">By Mr. Peter Wairigi</div>
+            <div class="ebook-title">Navigating the Kenyan Real Estate Market</div>
+            <p class="ebook-desc">A comprehensive guide on the laws, ethics, and strategies required to succeed as a professional realtor in Kenya's unique landscape.</p>
+            <div class="ebook-footer">
+               <div style="font-weight:800; color:var(--dark);">KSh 1,500</div>
+               <button class="btn btn-primary btn-pay-mpesa" data-item="eBook: Navigating the Kenyan Market" data-amount="KSh 1,500">Purchase / Download</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- BOOK 2 -->
+        <div class="ebook-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="ebook-img" style="background:var(--primary-dark);">
+            <i class="fas fa-book"></i>
+            <div style="position:absolute; bottom:20px; left:20px; font-weight:800; font-size:1.5rem;">Property Mastery</div>
+          </div>
+          <div class="ebook-body">
+            <div class="ebook-author">By Mr. Peter Wairigi</div>
+            <div class="ebook-title">Strategic Real Estate Marketing</div>
+            <p class="ebook-desc">Learn how to build a high-performance personal brand and close high-value deals using modern marketing techniques.</p>
+            <div class="ebook-footer">
+               <div style="font-weight:800; color:var(--dark);">KSh 2,000</div>
+               <button class="btn btn-primary btn-pay-mpesa" data-item="eBook: Strategic Marketing" data-amount="KSh 2,000">Purchase / Download</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- BOOK 3 -->
+        <div class="ebook-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="ebook-img" style="background:var(--accent);">
+            <i class="fas fa-book"></i>
+            <div style="position:absolute; bottom:20px; left:20px; font-weight:800; font-size:1.5rem;">Ethics & Standards</div>
+          </div>
+          <div class="ebook-body">
+            <div class="ebook-author">By KPRA Board</div>
+            <div class="ebook-title">Kenya Real Estate Professional Standards</div>
+            <div class="ebook-desc">The official handbook on ethical conduct and professional standards for KPRA certified members.</div>
+            <div class="ebook-footer">
+               <div style="font-weight:800; color:var(--dark);">Free for Members</div>
+               <a href="portal.html" class="btn btn-dark">Download PDF</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer"><div class="footer-main"><div class="container"><div class="footer-grid"><div><div class="footer-logo"><img src="assets/images/logo.png" alt="KPRA"/></div><p class="footer-about">Kenya Professional Realtors Association — The Voice Of Real Estate Professionals In Kenya.</p><div class="footer-socials"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-x-twitter"></i></a><a href="#"><i class="fab fa-linkedin-in"></i></a></div></div><div><div class="footer-heading">Quick Links</div><ul class="footer-links"><li><a href="index.html">Home</a></li><li><a href="news.html">News</a></li><li><a href="merchandise.html">Shop</a></li><li><a href="publications.html">Publications</a></li></ul></div><div><div class="footer-heading">Contact</div><div class="footer-contact-item"><i class="fas fa-location-dot"></i><span>Park Suites, 6th Floor</span></div><div class="footer-contact-item"><i class="fas fa-phone"></i><a href="tel:+254731644204">+254 731 644 204</a></div></div></div></div></div><div class="container"><div class="footer-bottom"><p>&copy; 2026 KPRA. All Rights Reserved.</p></div></div></footer>
+<script src="js/main.js"></script>
+</body></html>

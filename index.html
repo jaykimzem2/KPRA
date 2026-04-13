@@ -44,10 +44,11 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About Us</a></li>
             <li><a href="team.html">KPRA Team</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
           </ul>
         </li>
         <li>
-          <a href="mls.html">MLS Portal <i class="fas fa-chevron-down"></i></a>
+          <a href="mls.html">MLS <i class="fas fa-chevron-down"></i></a>
           <ul class="dropdown">
             <li><a href="mls.html">Buy a Property</a></li>
             <li><a href="mls.html#sell">Sell a Property</a></li>
@@ -55,7 +56,7 @@
           </ul>
         </li>
         <li>
-          <a href="membership.html">Membership <i class="fas fa-chevron-down"></i></a>
+          <a href="membership.html" class="nav-membership">Membership <i class="fas fa-chevron-down"></i></a>
           <ul class="dropdown">
             <li><a href="membership.html">Membership Packages</a></li>
             <li><a href="benefits.html">Member Benefits</a></li>
@@ -71,29 +72,26 @@
           </ul>
         </li>
         <li>
-          <a href="networking.html">Power Networking <i class="fas fa-chevron-down"></i></a>
-          <ul class="dropdown">
-            <li><a href="networking.html">About Power Networking</a></li>
-            <li><a href="networking.html#events">Networking Events</a></li>
-            <li><a href="networking.html#gallery">Gallery</a></li>
-          </ul>
-        </li>
-        <li>
           <a href="events.html">Events <i class="fas fa-chevron-down"></i></a>
           <ul class="dropdown">
-            <li><a href="events.html">KPRA Events</a></li>
-            <li><a href="news.html">Real Estate News</a></li>
+            <li><a href="events.html#golf">Corporate Golf</a></li>
+            <li><a href="events.html#awards">Annual Awards Dinner</a></li>
+            <li><a href="events.html#launches">Product Launches</a></li>
+            <li><a href="events.html#openhouses">Open Houses</a></li>
+            <li><a href="networking.html">Power Networking</a></li>
+            <li><a href="events.html#special">Special Business Events</a></li>
           </ul>
         </li>
+        <li><a href="merchandise.html">Merchandise</a></li>
         <li>
-          <a href="#">Publications <i class="fas fa-chevron-down"></i></a>
+          <a href="publications.html">Publications <i class="fas fa-chevron-down"></i></a>
           <ul class="dropdown">
-            <li><a href="#">Professional Realtor Magazine</a></li>
-            <li><a href="#">Real Estate Report</a></li>
-            <li><a href="#">Newsletter</a></li>
+            <li><a href="publications.html#magazine">Professional Realtor Magazine</a></li>
+            <li><a href="publications.html#newsletter">Newsletter</a></li>
+            <li><a href="news.html">Real Estate News</a></li>
+            <li><a href="publications.html#ebooks">eBooks</a></li>
           </ul>
         </li>
-        <li><a href="contact.html">Contact Us</a></li>
         <li><a href="apply.html" class="nav-cta">Join KPRA</a></li>
       </ul>
     </div>
@@ -120,9 +118,10 @@
   <div class="hero-content">
     <div class="container">
       <div class="hero-text" data-aos="fade-up">
-        <span class="hero-tag">Professional Membership Association</span>
+        <span class="hero-tag" style="background:var(--accent);">Professional Membership Association</span>
         <h1 class="hero-title">Kenya Professional<br/><span>Realtors Association</span></h1>
-        <p class="hero-desc">INFORM · INSPIRE · EMPOWER — The collective voice shaping Kenya's real estate industry through training, certification, advocacy and professional excellence.</p>
+        <p class="hero-desc" style="margin-bottom:15px; font-weight:800; color:var(--white); opacity:1;">INFORM &middot; INSPIRE &middot; EMPOWER</p>
+        <p class="hero-desc">The collective voice shaping Kenya's real estate industry through training, certification, advocacy and professional excellence.</p>
         <div class="hero-btns">
           <a href="membership.html" class="btn btn-primary"><i class="fas fa-user-plus"></i> Become a Member</a>
           <a href="about.html" class="btn btn-outline"><i class="fas fa-play-circle"></i> Learn More</a>
@@ -200,14 +199,14 @@
         <div class="stat-label">Active Members</div>
       </div>
       <div class="stat-item" data-aos="zoom-in" data-aos-delay="100">
-        <div class="stat-icon"><i class="fas fa-user-tie"></i></div>
-        <div class="stat-num" data-count="1000" data-suffix="+">0</div>
+        <div class="stat-icon"><i class="fas fa-user-check"></i></div>
+        <div class="stat-num" data-count="6500" data-suffix="+">0</div>
         <div class="stat-label">KPRA Patrons</div>
       </div>
       <div class="stat-item" data-aos="zoom-in" data-aos-delay="200">
-        <div class="stat-icon"><i class="fas fa-certificate"></i></div>
+        <div class="stat-icon"><i class="fas fa-graduation-cap"></i></div>
         <div class="stat-num" data-count="300" data-suffix="+">0</div>
-        <div class="stat-label">Certified Realtors</div>
+        <div class="stat-label">Trained Realtors</div>
       </div>
       <div class="stat-item" data-aos="zoom-in" data-aos-delay="300">
         <div class="stat-icon"><i class="fas fa-handshake"></i></div>
@@ -294,7 +293,7 @@
         </div>
     </div>
 
-    <div class="membership-grid-2" style="margin-top:25px;" data-aos="fade-up" data-aos-delay="200">
+    <div class="membership-grid" style="margin-top:25px;" data-aos="fade-up" data-aos-delay="200">
       <div class="mem-card">
         <div class="mem-icon"><i class="fas fa-city"></i></div>
         <div class="mem-title">Corporate</div>
@@ -322,6 +321,20 @@
           <li class="mem-feature"><i class="fas fa-check"></i> MOU Partnership</li>
         </ul>
         <a href="apply.html" class="btn btn-outline-primary" style="width:100%;justify-content:center;">Apply Now</a>
+      </div>
+      <div class="mem-card">
+        <div class="mem-icon" style="background:var(--dark);"><i class="fas fa-crown"></i></div>
+        <div class="mem-title">KPRA Patron</div>
+        <div class="mem-level">Eco-system Partner</div>
+        <p class="mem-desc">Individuals who engage with KPRA's ecosystem without being bound to a formal membership package.</p>
+        <div class="mem-price">Pay Per Event</div>
+        <div class="mem-fee-label">Flexible Participation</div>
+        <ul class="mem-features">
+          <li class="mem-feature"><i class="fas fa-check"></i> Event Access</li>
+          <li class="mem-feature"><i class="fas fa-check"></i> Networking Access</li>
+          <li class="mem-feature"><i class="fas fa-check"></i> Awards Eligibility</li>
+        </ul>
+        <a href="membership.html#patron" class="btn btn-outline-primary" style="width:100%;justify-content:center;">Learn More</a>
       </div>
     </div>
     <div class="text-center mt-50" data-aos="fade-up">
